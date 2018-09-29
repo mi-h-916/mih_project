@@ -13,5 +13,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setupFragment()
+    }
+
+    fun setupFragment() {
+        val fragment = MainFragment()
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(binding.container.id,fragment)
+        transaction.commit()
     }
 }

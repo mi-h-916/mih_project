@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setupFragment() {
-        val fragment = MainFragment()
+//        val fragment = MainFragment()
+        val fragment = GridFragment()
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(binding.container.id,fragment)
         transaction.commit()
